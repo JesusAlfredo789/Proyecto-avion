@@ -15,8 +15,12 @@
           src="./models/terrain/scene.gltf">
           </a-asset-item>
 
+      <a-asset-item
+        id="airplane"
+        src="./models/airplane/Stunning Krunk-Lappi.glb"
+        ></a-asset-item>
+        </a-assets>
       
-
       <!-- Terreno  -->
       <a-entity 
         id= "terrain"
@@ -27,14 +31,14 @@
         terrain-rotation-reader
         ></a-entity>
       <!-- Avioneta -->
-      <a-entity
-        id="sled_model"
-        gltf-model="#sled"
-        position="0 -9 0"
-        scale="0.15 0.15 0.15"
-        rotation="0 -90 0"
-        sled-rotation-reader>
-      </a-entity>
+     <a-entity
+       id="airplane-model"
+       gltf-model="#airplane"
+       position= "0 -9 0"
+       scale= "0.15 0.15 0.15"
+       rotation= "0 -90 0"
+       airplane-rotation-reader
+       ></a-entity>
       
     </a-scene>
   </body>
