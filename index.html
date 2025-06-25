@@ -15,22 +15,17 @@
           src="./models/terrain/scene.gltf">
           </a-asset-item>
 
-        <a-asset-item
-          id="sled"
-          src="./models/airplane/Avion.glb">
-          </a-asset-item>
-      </a-assets>
+      
 
       <!-- Terreno  -->
-      <a-entity
-        id="terrain"
+      <a-entity 
+        id= "terrain"
         gltf-model="#terrainMap"
-        position="0 0 0"
-        scale="0.3 0.3 0.3"
-        animation="property: position; to: 0 0 1000;easing:linear; loop: true; dur: 150000"
-        terrain-rotation-reader>
-      </a-entity>
-
+        position= "0 0 0"
+        scale= "0.3 0.3 0.3"
+        animation= "property:position; to: 0 0 1000; easing:linear; loop:true; dur:150000"
+        terrain-rotation-reader
+        ></a-entity>
       <!-- Avioneta -->
       <a-entity
         id="sled_model"
